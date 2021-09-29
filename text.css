@@ -1,42 +1,78 @@
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
 h1,h2,h3,h4,h5,h6 {
   display: block;
   font-weight: bold;
 }
 
 h1 {
-  /* color: rgb(47, 31, 15); */
-  font-size: 2em;
+  font-stretch: condensed;
+  font-size: 3em;
   margin-block-start: 0.67em;
   margin-block-end: 0.67em;
-  text-shadow: 0 1px 2px rgba(0,63,90, 0.3);
 }
 
 h2 {
-  font-weight: 1.5em;
+  font-size: 2em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
 }
 
 h3 {
-  font-weight: 1.17em;
   margin-block-start: 1em;
   margin-block-end: 1em;
 }
 
 h4 {
-  font-weight: 1.00em;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
 }
 
 h5 {
-  font-weight: 0.83em;
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
 }
 
 h6 {
-  font-weight: 0.67em;
   margin-block-start: 2.33em;
   margin-block-end: 2.33em;
+}
+
+p {
+  hyphens: auto;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+p > span {
+  /* text-decoration: underline;
+  text-decoration-style: dotted; */
+
+  font-weight: bold;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover {
+  font-style: italic;
+  text-decoration-style: dashed;
+}
+
+a:active {
+  opacity: 0.5;
+}
+
+#contact {
+  list-style: none;
+  font-weight: bold;
+  font-size: 0.8em;
+
+  line-height: 1.5em;
 }
