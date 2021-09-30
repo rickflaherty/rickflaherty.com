@@ -7,7 +7,7 @@
 
 @keyframes animating-exclamation {
   0%, 67%, 100% {
-    transform: rotate(0turn) scale(1,1) translateY(0%);
+    transform: none;
   }
 
   30% {

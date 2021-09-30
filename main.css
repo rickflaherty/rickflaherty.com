@@ -14,13 +14,13 @@ body {
   max-width: 900px;
 }
 
+h1, a {
+  color: white;
+}
+
 h3 {
   width: 100%;
   border-top: 3px solid rgb(32, 33, 36);
-}
-
-a {
-  color: rgb(32, 33, 36);
 }
 
 img {
@@ -50,6 +50,7 @@ header ul {
 }
 
 footer {
+  background-color: white;
   border-top: 5px solid rgb(32, 33, 36);
   margin-top: 2rem;
   padding-top: 1rem;
