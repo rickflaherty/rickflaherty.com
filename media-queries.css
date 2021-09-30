@@ -4,9 +4,9 @@
   }
 }
 
-@media screen and (min-height: 414px) {
+@media screen and (min-height: 415px) {
   body {
-    margin: 0 auto calc(7em + 1rem) auto;
+    margin: 0 auto calc(8em + 1rem) auto;
   }
   footer {
     background-color: white;
@@ -23,12 +23,29 @@
 
 @media screen and (min-height: 768px) and (min-width: 694px){
   body {
-    margin: 0 auto 6em auto;
+    /* margin: 0 auto 7em auto; */
     width: calc(100vw - 4rem);
   }
 
+  .img-txt {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img-txt > img {
+    height: 100%;
+    width: auto;
+    width: calc(50% - 1em);
+  }
+
+   .img-txt > div {
+     width: calc(50% - 1em);
+     height: auto;
+     margin-top: 0;
+   }
+
   header {
-    padding: 2em 0;
+    padding: 2rem 0 1rem 0;
   }
 
   footer {
@@ -38,7 +55,7 @@
     bottom: 0;
     /* left: 0; */
     margin: 0 auto;
-    padding: 1rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
 }
 

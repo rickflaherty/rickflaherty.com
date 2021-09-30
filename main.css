@@ -34,7 +34,7 @@ header {
 
   position: sticky;
   top: 0;
-  padding: 1rem 0;
+  padding: 1rem 0 0.5rem 0;
   z-index: 1; /*To fix animating exclamation to go over the header.*/
 
   background-color: white;
@@ -46,12 +46,12 @@ header h1 {
 }
 
 header ul {
-  width: min-content;
+  /* width: min-content; */
 }
 
 footer {
   border-top: 5px solid rgb(32, 33, 36);
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding-top: 1rem;
   /* width: calc(100vw - 2em); */
   min-width: 300px; */
