@@ -5,6 +5,9 @@
 }
 
 @media screen and (min-height: 414px) {
+  body {
+    margin: 0 auto calc(7em + 1rem) auto;
+  }
   footer {
     background-color: white;
     width: calc(100vw - 2rem);
