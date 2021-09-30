@@ -7,13 +7,25 @@ body {
   background-color: white;
   color: rgb(32, 33, 36);
   margin: 0 auto 1rem auto;
+  margin-left: max(auto, safe-area-inset-left);
+  margin-right: max(auto, safe-area-inset-right);
   width: calc(100vw - 2rem);
   min-width: 300px;
   max-width: 900px;
 }
 
+h3 {
+  width: 100%;
+  border-top: 3px solid rgb(32, 33, 36);
+}
+
 a {
   color: rgb(32, 33, 36);
+}
+
+img {
+  height: auto;
+  width: 100%;
 }
 
 header {
@@ -23,18 +35,18 @@ header {
   position: sticky;
   top: 0;
   padding: 1rem 0;
+  z-index: 1; /*To fix animating exclamation to go over the header.*/
 
   background-color: white;
   border-bottom: 5px solid rgb(32, 33, 36);
 }
 
-h3 {
-  width: 100%;
-  border-top: 3px solid rgb(32, 33, 36);
-}
-
 header h1 {
   margin-block-start: 0;
+}
+
+header ul {
+  width: min-content;
 }
 
 footer {

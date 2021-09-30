@@ -56,7 +56,7 @@ p {
   line-height: 1.4;
 }
 
-p + p {
+p + p, img + p, p + img {
   margin-top: 1em;
 }
 
