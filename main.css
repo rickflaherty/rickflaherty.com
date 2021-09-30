@@ -6,8 +6,8 @@ html {
 body {
   background-color: white;
   color: rgb(32, 33, 36);
-  margin: 0 auto 1em auto;
-  width: calc(100vw - 2em);
+  margin: 0 auto 1rem auto;
+  width: calc(100vw - 2rem);
   min-width: 300px;
   max-width: 900px;
 }
@@ -22,7 +22,7 @@ header {
 
   position: sticky;
   top: 0;
-  padding: 1em 0;
+  padding: 1rem 0;
 
   background-color: white;
   border-bottom: 5px solid rgb(32, 33, 36);
@@ -38,5 +38,10 @@ header h1 {
 }
 
 footer {
-  margin-top: 2em;
+  border-top: 5px solid rgb(32, 33, 36);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  /* width: calc(100vw - 2em); */
+  min-width: 300px; */
+  max-width: 900px;
 }
