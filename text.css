@@ -25,16 +25,21 @@ h2 {
 }
 
 h3 {
+  font-size: 1.3em;
   margin-block-start: 1em;
   margin-block-end: 1em;
+  padding-top: 0.8em;
 }
 
 h4 {
+  font-size: 1em;
   margin-block-start: 1.33em;
   margin-block-end: 1.33em;
 }
 
 h5 {
+  font-size: 1em;
+  font-style: italic;
   margin-block-start: 1.67em;
   margin-block-end: 1.67em;
 }
@@ -72,6 +77,11 @@ a:hover {
 
 a:active {
   opacity: 0.5;
+}
+
+ul {
+  list-style: none;
+  padding-left: 2em;
 }
 
 footer {

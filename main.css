@@ -28,6 +28,11 @@ header {
   border-bottom: 5px solid rgb(32, 33, 36);
 }
 
+h3 {
+  width: 100%;
+  border-top: 3px solid rgb(32, 33, 36);
+}
+
 header h1 {
   margin-block-start: 0;
 }
