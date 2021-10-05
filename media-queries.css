@@ -1,12 +1,12 @@
 @media screen and (min-width: 544px){
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
 @media screen and (min-height: 415px) {
   body {
-    margin: 0 auto calc(8em + 1rem) auto;
+    margin: 0 auto calc(8rem + 2rem) auto;
   }
   footer {
     background-color: white;
@@ -23,7 +23,7 @@
 
 @media screen and (min-height: 768px) and (min-width: 694px){
   body {
-    /* margin: 0 auto 7em auto; */
+    margin: 0 auto calc(7rem + 2rem) auto;
     width: calc(100vw - 4rem);
   }
 
@@ -60,7 +60,7 @@
 
 @media screen and (min-width: 694px){
   html {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   body {
@@ -79,7 +79,7 @@
 
 @media screen and (min-width: 1366px){
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
