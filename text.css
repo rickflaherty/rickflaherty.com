@@ -24,13 +24,13 @@ header > h1 {
 }
 
 h2 {
-  font-size: 3em;
+  font-size: 1.8em;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-block-start: 1.66em;
   margin-block-end: 1em;
   padding-top: 1.66em;
@@ -62,7 +62,7 @@ p {
 }
 
 p + p, img + p, p + img, .img-txt > div {
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 b {
@@ -89,7 +89,7 @@ ul {
 }
 
 footer {
-  font-size: 1.35em;
+  font-size: 1.2em;
 }
 
 #contact {
