@@ -1,0 +1,95 @@
+.lang-switch {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  line-height: 1.23;
+  margin: auto 0;
+  font-size: 1.4em;
+}
+
+.lang-switch::after {
+  position: absolute;
+  content: '';
+  bottom: .1em;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  transform-origin: center bottom;
+  transform: rotate(0deg);
+  transition: transform .2s ease-in, width .3s, bottom .3s, left .3s, opacity .4s ease-in;
+}
+
+.lang-switch:hover::after {
+  bottom: .62em;
+  left: .25em;
+  width: 65%;
+  transform: rotate(-70deg);
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .32s, opacity .1s;
+}
+
+.lang-switch:active::after {
+  bottom: .62em;
+  left: -.5em;
+  transform: rotate(-70deg);
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .2s, opacity .2s;
+  opacity: 0;
+}
+
+.lang-switch div {
+  width: 100%;
+}
+
+/* First language */
+.lang-switch div:first-child{
+  clip-path: polygon(0 0, -200% 0, -200% 100%, 0 100%, 100% 100%, 100% 0);
+  transition: clip-path 0s, text-indent .3s;
+}
+
+.lang-switch:hover div:first-child{
+  clip-path: polygon(0 0, -200% 0, -200% 100%, 0 200%, 100% -100%, 100% -100%);
+  text-indent: -.1em;
+  transition: clip-path .3s, text-indent .3s;
+}
+
+.lang-switch:active div:first-child{
+  clip-path: polygon(0 0, -200% 0, -200% 100%, -200% 200%, -100% -100%, -100% -100%);
+  text-indent: 0;
+  transition: clip-path .4s, text-indent .3s;
+}
+
+/* Second language */
+.lang-switch div:last-child{
+  margin-top: -1.22em;
+  opacity: 0.5;
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 100% 100%);
+  transition: clip-path 0s, text-indent .3s;
+}
+
+.lang-switch:hover div:last-child{
+  clip-path: polygon(0 200%, 100% -100%, 100% 0, 100% 100%);
+  text-indent: .5em;
+  transition: clip-path .3s, text-indent .3s;
+}
+
+.lang-switch:active div:last-child{
+  clip-path: polygon(-200% 200%, -100% -100%, 100% 0, 100% 100%);
+  text-indent: 0;
+  opacity: 1;
+  transition: clip-path .4s, text-indent .3s;
+}
+
+/* Remove <a> styling */
+.lang-switch a {
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.lang-switch a:active{
+  opacity: 1;
+}
