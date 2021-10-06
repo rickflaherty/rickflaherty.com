@@ -37,6 +37,11 @@
     padding: 1rem 0 .5rem 0;
   }
 
+  .minimalHeader {
+    font-size: 0.75em;
+    /* padding: .5rem 0 .25rem 0; */
+  }
+
   footer {
     width: calc(100vw - 2rem);
   }
@@ -94,9 +99,12 @@
     padding: 2rem 0 1rem 0;
   }
 
+  /* .minimalHeader {
+    padding: .5rem 0 .25rem 0;
+  } */
+
   footer {
     /* background-color: white; */
-    font-size: 1.2rem;
     width: calc(100vw - 4rem);
     /* position: fixed; */
     /* bottom: 0; */
@@ -106,6 +114,9 @@
     padding-bottom: calc(1rem + env(safe-area-inset-bottom));
 
     /* z-index: 1; /*To fix animating exclamation to go over the footer.*/ */
+  }
+  footer.bottom {
+    font-size: 1.2rem;
   }
 }
 
