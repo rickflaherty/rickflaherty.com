@@ -143,6 +143,10 @@
     color: white;
   }
 
+  .lang-switch::after {
+    background-color: white;
+  }
+
   #contact, #contact a, p, h3, h4, h5, h6{
     color: rgb(237, 237, 237);
   }
