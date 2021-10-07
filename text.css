@@ -81,6 +81,7 @@ a {
 a:hover {
   font-style: italic;
   text-decoration-style: dashed;
+  opacity: 1;
 }
 
 a:active {

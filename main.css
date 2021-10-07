@@ -94,6 +94,10 @@ footer p, footer a {
   transition: opacity 0.3s ease-out;
 }
 
+footer:hover p, footer:hover a {
+  opacity: 1;
+}
+
 footer.bottom{
   /* color: rgb(32, 33, 36);; */
 }

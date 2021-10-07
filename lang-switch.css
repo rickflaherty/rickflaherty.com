@@ -21,7 +21,7 @@
 }
 
 .lang-switch:hover::after {
-  bottom: .62em;
+  bottom: .64em;
   left: .27em;
   width: 65%;
   transform: rotate(-68deg);
@@ -31,51 +31,107 @@
 .lang-switch:active::after {
   bottom: .62em;
   left: -.5em;
-  transform: rotate(-70deg);
+  transform: rotate(-68deg);
   transition: transform .18s ease-out, width .3s, bottom .3s, left .2s, opacity .2s;
   opacity: 0;
 }
 
-.lang-switch div {
+.lang-switch span {
+  display: block;
   width: 100%;
 }
 
 /* First language */
-.lang-switch div:first-child{
+.lang-switch span:first-child{
   clip-path: polygon(0 0, -200% 0, -200% 100%, 0 100%, 100% 100%, 100% 0);
   transition: clip-path 0s, text-indent .3s;
 }
 
-.lang-switch:hover div:first-child{
+.lang-switch:hover span:first-child{
   clip-path: polygon(0 0, -200% 0, -200% 100%, 0 200%, 100% -100%, 100% -100%);
-  text-indent: -.1em;
+  text-indent: -0em;
   transition: clip-path .3s, text-indent .3s;
 }
 
-.lang-switch:active div:first-child{
+.lang-switch:active span:first-child{
   clip-path: polygon(0 0, -200% 0, -200% 100%, -200% 200%, -100% -100%, -100% -100%);
   text-indent: 0;
   transition: clip-path .4s, text-indent .3s;
 }
 
 /* Second language */
-.lang-switch div:last-child{
+.lang-switch span:last-child{
   margin-top: -1.22em;
   opacity: 0.5;
   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 100% 100%);
   transition: clip-path 0s, text-indent .3s;
 }
 
-.lang-switch:hover div:last-child{
+.lang-switch:hover span:last-child{
   clip-path: polygon(0 200%, 100% -100%, 100% 0, 100% 100%);
-  text-indent: .5em;
+  text-indent: .4em;
   transition: clip-path .3s, text-indent .3s;
 }
 
-.lang-switch:active div:last-child{
+.lang-switch:active span:last-child{
   clip-path: polygon(-200% 200%, -100% -100%, 100% 0, 100% 100%);
   text-indent: 0;
   opacity: 1;
+  transition: clip-path .4s, text-indent .3s;
+}
+
+/* Other Direction */
+.lang-switch.switch-alt:hover::after {
+  bottom: .64em;
+  left: .23em;
+  width: 65%;
+  transform: rotate(112deg);
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .32s, opacity .1s;
+}
+
+.lang-switch.switch-alt:active::after {
+  bottom: .62em;
+  left: .65em;
+  transform: rotate(112deg);
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .2s, opacity .2s;
+  opacity: 0;
+}
+/* First language */
+.lang-switch.switch-alt span:first-child{
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 100% 0, 0 0);
+  transition: clip-path 0s, text-indent .3s;
+}
+
+.lang-switch.switch-alt:hover span:first-child{
+  clip-path: polygon(100% -100%, 0 200%, 100% 100%, 100% 0, 0 0);
+  text-indent: .4em;
+  transition: clip-path .3s, text-indent .3s;
+}
+
+.lang-switch.switch-alt:active span:first-child{
+  clip-path: polygon(300% -100%, 200% 200%, 100% 100%, 100% 0, 0 0);
+  text-indent: 0;
+  transition: clip-path .4s, text-indent .3s;
+}
+
+/* Second language */
+.lang-switch.switch-alt span:last-child{
+  margin-top: -1.22em;
+  opacity: 0.5;
+  clip-path: polygon(-100% 100%, -100% 100%, 100% 100%, 0 100%);
+  transition: clip-path 0s, text-indent .3s;
+}
+
+.lang-switch.switch-alt:hover span:last-child{
+  clip-path: polygon(-100% 0, -100% 100%, 0 200%, 100% -100%);
+  text-indent: -0em;
+  transition: clip-path .3s, text-indent .3s;
+}
+
+.lang-switch.switch-alt:active span:last-child{
+  opacity: 1;
+  clip-path: polygon(-100% 0, -100% 100%, 200% 200%, 300% -100%);
+  text-indent: 0;
   transition: clip-path .4s, text-indent .3s;
 }
 
