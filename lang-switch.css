@@ -3,11 +3,10 @@
   width: fit-content;
   height: fit-content;
   line-height: 1.23;
-  margin: auto 0;
   font-size: 1.4rem;
 }
 
-.lang-switch::after {
+.lang-switch::before {
   position: absolute;
   content: '';
   bottom: .1em;
@@ -20,7 +19,7 @@
   transition: transform .2s ease-in, width .3s, bottom .3s, left .3s, opacity .4s ease-in;
 }
 
-.lang-switch:hover::after {
+.lang-switch:hover::before {
   bottom: .64em;
   left: .27em;
   width: 65%;
@@ -28,11 +27,11 @@
   transition: transform .18s ease-out, width .3s, bottom .3s, left .32s, opacity .1s;
 }
 
-.lang-switch:active::after {
+.lang-switch:active::before {
   bottom: .62em;
   left: -.5em;
   transform: rotate(-68deg);
-  transition: transform .18s ease-out, width .3s, bottom .3s, left .2s, opacity .2s;
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .15s, opacity .2s;
   opacity: 0;
 }
 
@@ -56,7 +55,7 @@
 .lang-switch:active span:first-child{
   clip-path: polygon(0 0, -200% 0, -200% 100%, -200% 200%, -100% -100%, -100% -100%);
   text-indent: 0;
-  transition: clip-path .4s, text-indent .3s;
+  transition: clip-path .3s, text-indent .2s;
 }
 
 /* Second language */
@@ -77,11 +76,11 @@
   clip-path: polygon(-200% 200%, -100% -100%, 100% 0, 100% 100%);
   text-indent: 0;
   opacity: 1;
-  transition: clip-path .4s, text-indent .3s;
+  transition: clip-path .3s, text-indent .2s;
 }
 
 /* Other Direction */
-.lang-switch.switch-alt:hover::after {
+.lang-switch.switch-alt:hover::before {
   bottom: .64em;
   left: .23em;
   width: 65%;
@@ -89,11 +88,11 @@
   transition: transform .18s ease-out, width .3s, bottom .3s, left .32s, opacity .1s;
 }
 
-.lang-switch.switch-alt:active::after {
+.lang-switch.switch-alt:active::before {
   bottom: .62em;
   left: .65em;
   transform: rotate(112deg);
-  transition: transform .18s ease-out, width .3s, bottom .3s, left .2s, opacity .2s;
+  transition: transform .18s ease-out, width .3s, bottom .3s, left .15s, opacity .2s;
   opacity: 0;
 }
 /* First language */
@@ -111,7 +110,7 @@
 .lang-switch.switch-alt:active span:first-child{
   clip-path: polygon(300% -100%, 200% 200%, 100% 100%, 100% 0, 0 0);
   text-indent: 0;
-  transition: clip-path .4s, text-indent .3s;
+  transition: clip-path .3s, text-indent .2s;
 }
 
 /* Second language */
@@ -132,7 +131,7 @@
   opacity: 1;
   clip-path: polygon(-100% 0, -100% 100%, 200% 200%, 300% -100%);
   text-indent: 0;
-  transition: clip-path .4s, text-indent .3s;
+  transition: clip-path .3s, text-indent .2s;
 }
 
 /* Remove <a> styling */

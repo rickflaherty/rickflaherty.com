@@ -76,6 +76,16 @@ header li {
   }
 }
 
+.header-right{
+  width: 2rem;
+  height: fit-content;
+  margin: auto 0;
+}
+
+.lang-switch {
+  margin-left: auto;
+}
+
 footer {
   background-color: white;
   border-top: 5px solid rgb(32, 33, 36);
