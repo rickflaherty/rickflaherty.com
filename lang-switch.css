@@ -4,7 +4,13 @@
   height: fit-content;
   line-height: 1.23;
   font-size: 1.4rem;
+  /* left: 0;
+  transition: left .3s; */
 }
+
+/* .lang-switch:not(.switch-alt):hover {
+  left: .56rem;
+} */
 
 .lang-switch::before {
   position: absolute;
