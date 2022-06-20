@@ -1,0 +1,10 @@
+{
+  "title": "Rick Flaherty",
+  "mainpage": {
+    "title": "Creativity and Technology Sparks Wonder",
+    "introduction": "I've gone on to my master's to study how to spark that wonder! Graduating in September of 2022, I'm currently trying to get a human interaction or user experience related job.",
+    "study": "I've studied how to <b>make dandelion puffs move in a life-like manner using static electricity</b> and I'm <b>building a conversation facilitating robot that works in any language</b>.",
+    "skills": "I have experience in <b>HTML/CSS/JavaScript</b>, <b>Vue.js/Nuxt.js</b>, <b>Python</b>, <b>microcontrollers</b>, and <b>3D printing</b>.",
+    "achievements": "I <b>received an international creative award</b>, and <b>presented my research at a conference</b>."
+  }
+}

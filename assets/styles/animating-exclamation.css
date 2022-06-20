@@ -1,0 +1,49 @@
+.animating-exclamation {
+  display: inline-block;
+  transform: none;
+  transform-origin: center center;
+  animation: animating-exclamation 1.9s infinite normal ease-out 1.2s;
+}
+
+@keyframes animating-exclamation {
+  0%, 67%, 100% {
+    transform: none;
+  }
+
+  30% {
+    transform: rotate(0.005turn) scale(1,0.8) translateY(9%) translateX(10%);
+  }
+
+  34% {
+    transform: rotate(0.06turn) scale(1.1,0.65) translateY(15%) translateX(35%);
+  }
+
+  38% {
+    transform: rotate(-0.07turn) scale(1,1.2) translateY(-40%) translateX(12%);
+  }
+
+  39% {
+    transform: rotate(-0.075turn) scale(1.15,1) translateY(-60%) translateX(14%);
+  }
+
+  43% {
+    transform: rotate(0.07turn) scale(1.1,0.95) translateY(-60%) translateX(-12%);
+  }
+
+  47% {
+    transform: rotate(-0.03turn) scale(1.1,1) translateY(-55%) translateX(7%);
+  }
+
+  52% {
+    transform: rotate(0.03turn) scale(1,1.5) translateY(-9%) translateX(15%);
+  }
+
+  55% {
+    transform: rotate(-0.01turn) scale(1,0.7) translateY(13%) translateX(-8%);
+  }
+
+  57% {
+    transform: rotate(0turn) scale(1,1.1) translateY(-3%);
+  }
+
+}

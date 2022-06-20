@@ -1,0 +1,30 @@
+:root {
+  --near-white: rgb(237, 237, 237);
+  --near-black: rgb(32,33,36);
+
+  --bkg: var(--near-white);
+  --text: var(--near-black);
+  --outline: var(--near-black);
+  --emphasis: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bkg: var(--near-black);
+    --text: var(--near-white);
+    --outline: var(--near-white);
+    --emphasis: white;
+  }
+}
+
+html, body{
+  background-color: var(--bkg);
+}
+
+body{
+  border-color: var(--outline);
+}
+
+body{
+  color: var(--emphasis);
+}
