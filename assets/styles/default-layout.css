@@ -5,7 +5,7 @@ html {
 
 body {
   background-color: var(--bkg);
-  color: var(--text);
+  /* color: var(--text); */
   margin: 0 auto 1rem auto;
   margin-left: max(auto, safe-area-inset-left);
   margin-right: max(auto, safe-area-inset-right);

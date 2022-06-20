@@ -170,7 +170,7 @@
 .lang-switch a {
   font-weight: normal;
   text-decoration: none;
-  color: var(--text);
+  color: var(--emphasis);
 }
 
 .lang-switch a:hover {

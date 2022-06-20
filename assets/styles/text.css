@@ -1,5 +1,6 @@
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: var(--text)
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -80,6 +81,7 @@ i {
 a {
   font-weight: bold;
   text-decoration: underline;
+  color: var(--text)
 }
 
 a:hover {
@@ -90,6 +92,10 @@ a:hover {
 
 a:active {
   opacity: 0.5;
+}
+
+a:visited {
+  color: inherit;
 }
 
 ul {
