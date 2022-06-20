@@ -14,7 +14,6 @@
 
 <script lang="ts">
 import Vue from 'vue'
-// import dendelion from '../assets/images/dandelion.png'
 
 export default Vue.extend({})
 </script>

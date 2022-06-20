@@ -5,6 +5,6 @@
     <Footer />
   </div>
 </template>
-<script>
+<!-- <script> -->
   // import '~/assets/scripts/scroll.js';
-</script>
+<!-- </script> -->

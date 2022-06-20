@@ -55,9 +55,9 @@ img {
     padding: 1rem 0 .5rem 0;
   }
 
-  .minimalHeader {
-    /* padding: .5rem 0 .25rem 0; */
-  }
+  /* .minimalHeader { 
+    padding: .5rem 0 .25rem 0; 
+  }*/
 
   footer {
     width: calc(100vw - 2rem);
@@ -76,9 +76,9 @@ img {
     max-width: 900px;
   }
 
-  header {
-    /* padding: 2rem 0 1rem 0; */
-  }
+  /*header {
+    padding: 2rem 0 1rem 0; 
+  }*/
 
   footer {
     /* width: calc(100vw - 4rem); */

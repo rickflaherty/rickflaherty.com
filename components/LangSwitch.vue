@@ -11,7 +11,7 @@
 <script>
   export default {
     data: () => {
-      return {isAlt: true}
+      return {isAlt: false}
     },
     methods: {
       altSwitch () {
