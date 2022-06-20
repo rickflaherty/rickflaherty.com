@@ -46,6 +46,14 @@
     letter-spacing: -0.1em;
   }
 
+  :not(:lang(ja)) body {
+    font-size: 1em;
+  }
+
+  :not(:lang(ja)) h1.site-title {
+    letter-spacing: 0;
+  }
+
   header li {
     display: list-item;
   }

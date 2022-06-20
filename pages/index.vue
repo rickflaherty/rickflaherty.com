@@ -4,6 +4,7 @@
       {{ $t('mainpage.title') }}<span class="animating-exclamation">!</span>
     </h2>
     <img src="../assets/images/dandelion.png" />
+    <!-- <img :src="dandelion" /> -->
     <p v-html="$t('mainpage.introduction')"></p>
     <p v-html="$t('mainpage.study')"></p>
     <p v-html="$t('mainpage.skills')"></p>
@@ -13,6 +14,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
+// import dendelion from '../assets/images/dandelion.png'
 
 export default Vue.extend({})
 </script>

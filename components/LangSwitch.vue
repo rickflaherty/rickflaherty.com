@@ -1,14 +1,25 @@
 <template>
-  <div class="lang-switch" v-bind:class="[isAlt ? 'switch-alt' : '']" @click="isAlt= !isAlt">
-    <nuxt-link
-  v-for="lang in $i18n.locales.filter(i => i.code !== this.$i18n.locale)"
-  :key="lang.code"
-  :to="switchLocalePath(lang.code)">
-    <span>Ａ</span>
-    <span>あ</span>
-  </nuxt-link>
+  <!-- <div class="lang-switch" v-bind:class="[isAlt ? 'switch-alt' : '']" @click="isAlt= !isAlt"> -->
+  <div class="lang-switch" v-bind:class="{'switch-alt': isAlt}" @click="altSwitch">
+    <nuxt-link v-for="lang in $i18n.locales.filter(i => i.code !== this.$i18n.locale)" :key="lang.code" :to="switchLocalePath(lang.code)">
+      <span>Ａ</span>
+      <span>あ</span>
+    </nuxt-link>
   </div>
 </template>
+
+<script>
+  export default {
+    data: () => {
+      return {isAlt: true}
+    },
+    methods: {
+      altSwitch () {
+        this.isAlt= !this.isAlt
+      }
+    }
+  }
+</script>
 
 <style>
 

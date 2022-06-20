@@ -1,6 +1,8 @@
 import i18n from './config/i18n'
 
 export default {
+  // ssr: true, 
+  target: 'static', 
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -26,6 +28,12 @@ export default {
     '@/assets/styles/default-layout.css',
     '@/assets/styles/colors.css'
   ],
+
+  scripts: [
+    {
+      src: '/assets/scripts/scroll.js'
+    }
+  ], 
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
