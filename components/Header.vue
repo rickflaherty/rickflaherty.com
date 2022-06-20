@@ -3,7 +3,7 @@
     <h1 class="site-title" v-if="getRouteBaseName()!=='index'">
       <nuxt-link :to="localePath('/')">{{ $t('title') }}</nuxt-link>
     </h1>
-    <h1 class="site-title" else>{{ $t('title') }}</h1>
+    <h1 class="site-title" v-else>{{ $t('title') }}</h1>
     <div class="header-right">
       <LangSwitch />
     </div>
